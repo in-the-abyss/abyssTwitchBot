@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/in-the-abyss/abyssTwitchBot/issues"
   },
-  "homepage": "https://github.com/in-the-abyss/abyssTwitchBot#readme"
+  "homepage": "https://github.com/in-the-abyss/abyssTwitchBot#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "logger": "0.0.1",
+    "node-fetch": "^2.6.1",
+    "redis": "^3.1.0",
+    "tmi.js": "^1.7.5",
+    "winston": "^3.3.3"
+  }
 }

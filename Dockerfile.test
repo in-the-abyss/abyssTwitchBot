@@ -1,0 +1,10 @@
+FROM node:alpine AS build
+
+WORKDIR /app
+COPY ["package*.json*", "./"]
+RUN npm install
+
+FROM node:alpine
+COPY --from=build /app .
+COPY ["test.js", "./"]
+CMD ["npm", "run", "pub"]
